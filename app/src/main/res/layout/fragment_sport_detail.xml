@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itosoftware.inderandroid.Fragments.SportDetailFragment"
+    android:id="@+id/fragment_news_detail"
+    android:background="@color/NegroTransparente70">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/fragment_sports_detail_progressbar"
+                android:background="@drawable/progress_animation"
+                android:layout_centerInParent="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/fragment_sports_detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"/>
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                android:id="@+id/fragment_sports_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_sports_detail_image"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Amarillo"
+                android:textSize="@dimen/TitleSize"
+                android:gravity="center_horizontal"
+                android:text="Título"
+                />
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                android:id="@+id/fragment_sports_detail_telphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_sports_detail_title"
+                android:textColor="@color/Blanco"
+                android:textSize="@dimen/ContentSize"
+                android:gravity="center_horizontal"
+                android:text="Teléfono"
+                />
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                android:id="@+id/fragment_sports_detail_capacidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_sports_detail_telphone"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/Blanco"
+                android:textSize="@dimen/ContentSize"
+                android:gravity="center_horizontal"
+                android:text="Capacidad"
+                />
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                android:id="@+id/fragment_sports_detail_ubicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_sports_detail_capacidad"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/Blanco"
+                android:textSize="@dimen/ContentSize"
+                android:gravity="center_horizontal"
+                android:text="Ubicación"
+                />
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                android:id="@+id/fragment_sports_detail_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_sports_detail_ubicacion"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/Blanco"
+                android:textSize="@dimen/ContentSize"
+                android:gravity="center_horizontal"
+                android:text="Dirección"
+                />
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                android:id="@+id/fragment_sports_detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/fragment_sports_detail_address"
+                android:textColor="@color/Blanco"
+                android:textSize="@dimen/ContentSize"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Contenido"
+                />
+
+            <!-- Botón Hacer Reserva -->
+            <RelativeLayout
+                android:id="@+id/content_reservation_button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:clickable="true"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/fragment_sports_detail_content">
+
+                <RelativeLayout
+                    android:id="@+id/fragment_sports_detail_reservation_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/circle_green"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/img_button_hacer_reserva"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:padding="20dp"
+                        android:src="@drawable/ic_action_hacer_reserva" />
+
+
+                </RelativeLayout>
+
+                <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                    android:id="@+id/textView_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/button_reservation"
+                    android:textColor="@color/Blanco"
+                    android:textSize="@dimen/DateSize"
+                    android:layout_below="@+id/fragment_sports_detail_reservation_button"
+
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!-- Close Button -->
+    <Button
+        android:id="@+id/fragment_sports_detail_close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="-10dp"
+        android:layout_marginBottom="-20dp"
+        android:text="×"
+        android:textSize="40dp"
+        android:textColor="@color/Blanco"
+        android:background="@drawable/rounded_close_button"
+        style="@style/ButtonStyle"
+        />
+
+</RelativeLayout>

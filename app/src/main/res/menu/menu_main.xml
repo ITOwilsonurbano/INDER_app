@@ -1,0 +1,23 @@
+<!-- res/menu/menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/action_reload_map"
+        android:icon="@drawable/ic_action_reload_map"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="Recargar Mapa" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_setting_dark"
+        app:showAsAction="never"
+        android:title="Configuraciones" />
+    <item
+        android:id="@+id/logout_action"
+        android:title="Cerrar Sesión"
+        android:icon="@drawable/close_sesion"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_search_reservation"
+        android:icon="@drawable/ic_action_search_reservation"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="Buscar Reserva" />
+</menu>

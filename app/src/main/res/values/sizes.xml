@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TitleSize">20sp</dimen>
+    <dimen name="SubtitleSize">18sp</dimen>
+    <dimen name="DateSize">15sp</dimen>
+    <dimen name="ForgetButton">13sp</dimen>
+    <dimen name="ContentSize">17sp</dimen>
+</resources>

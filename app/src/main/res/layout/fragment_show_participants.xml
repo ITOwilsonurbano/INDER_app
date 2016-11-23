@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itosoftware.inderandroid.Fragments.ShowParticipantsFragment"
+    android:id="@+id/fragment_show_participants"
+    android:background="@color/NegroTransparente70">
+
+    <ListView
+        android:id="@+id/fragment_show_participants_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="60dp"
+        android:drawSelectorOnTop="true"
+        android:divider="@drawable/divider_addparticipants_list"
+        android:dividerHeight="1dp"/>
+
+    <!-- Close Button -->
+    <Button
+        android:id="@+id/fragment_show_participants_close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="-10dp"
+        android:layout_marginBottom="-20dp"
+        android:text="×"
+        android:textSize="40dp"
+        android:textColor="@color/Blanco"
+        android:background="@drawable/rounded_close_button"
+        style="@style/ButtonStyle"
+        />
+
+</RelativeLayout>

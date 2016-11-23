@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blanco"
+    android:id="@+id/fragment_recommended"
+    android:layout_margin="20dp"
+    tools:context="Fragments.RecommendedFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_ecommended_swipe"
+        >
+        <GridView
+            android:id="@+id/fragment_recommended_grid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:stretchMode="columnWidth"
+            android:numColumns="2"
+
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:padding="0dp"
+            android:clipToPadding="false"
+            android:choiceMode="singleChoice"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/fragment_recommended_progressbar"
+        android:background="@drawable/progress_animation"
+        android:layout_centerHorizontal="true"
+        android:layout_width="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp" />
+
+
+</RelativeLayout>

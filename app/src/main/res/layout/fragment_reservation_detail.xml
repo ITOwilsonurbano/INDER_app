@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/Blanco"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_reservation_detail"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/reservation_detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:id="@+id/reservation_detail_row_one"
+                android:layout_weight="1"
+                android:layout_below="@+id/reservation_detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Gris"
+                android:orientation="horizontal">
+
+                <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                    android:id="@+id/reservation_detail_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="@dimen/TitleSize"
+                    android:layout_marginLeft="@dimen/activity_leftRight_margin"
+                    />
+                <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                    android:id="@+id/reservation_detail_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="@dimen/SubtitleSize"
+                    android:layout_marginRight="@dimen/activity_leftRight_margin"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/reservation_detail_row_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/activity_leftRight_margin"
+                android:layout_marginRight="@dimen/activity_leftRight_margin"
+                android:layout_below="@+id/reservation_detail_row_one">
+
+                <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                    android:id="@+id/reservation_detail_sportname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="@dimen/TitleSize"
+                    />
+                <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                    android:id="@+id/reservation_detail_sport_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/reservation_detail_sportname"
+                    android:textSize="@dimen/ContentSize"
+                    />
+                <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                    android:id="@+id/reservation_detail_sport_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/reservation_detail_sport_address"
+                    android:textSize="@dimen/ContentSize"
+                    />
+                <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                    android:id="@+id/reservation_detail_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/reservation_detail_sport_phone"
+                    android:textSize="@dimen/ContentSize"
+                    />
+                <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                    android:id="@+id/reservation_detail_discipline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/reservation_detail_date"
+                    android:textSize="@dimen/ContentSize"
+                    />
+                <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                    android:id="@+id/reservation_detail_subdivision"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/reservation_detail_discipline"
+                    android:textSize="@dimen/ContentSize"
+                    />
+            </LinearLayout>
+
+            <!-- Botón Ver Participantes -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:paddingBottom="100dp"
+                android:gravity="right"
+                android:layout_below="@+id/reservation_detail_row_two">
+
+                <LinearLayout
+                    android:id="@+id/reservation_detail_button_show_peers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/Transparente"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:text="Ver Participantes"
+                        android:textColor="@color/Verde"
+                        android:textSize="@dimen/SubtitleSize"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_ver_participantes" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blanco"
+    android:id="@+id/fragment_links_inder"
+    >
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_links_inder_swipe"
+        >
+        <com.itosoftware.inderandroid.graphicstest.AnimatedExpandableListView
+            android:id="@+id/fragment_links_inder_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawSelectorOnTop="true"
+            android:dividerHeight="0.5dp"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+<ImageView
+        android:id="@+id/fragment_links_inder_progressbar"
+        android:background="@drawable/progress_animation"
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp" />
+</RelativeLayout>

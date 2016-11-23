@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+        <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+            android:id="@+id/hour_row_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:textSize="@dimen/ContentSize"
+            />
+
+</RelativeLayout>

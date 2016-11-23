@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/NegroTransparente70">
+
+    <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+        android:id="@+id/fragment_terms_conditions_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/NegroTransparente70"
+        android:textSize="@dimen/TitleSize"
+        android:textColor="@color/Blanco"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_terms_conditions_title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:paddingBottom="10dp">
+
+            <com.itosoftware.inderandroid.graphicstest.JustifiedTextView
+                android:id="@+id/fragment_terms_conditions_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                xmlns:noghteh="http://noghteh.ir"
+                noghteh:textColor="@color/Blanco"
+                noghteh:textSize="@dimen/ContentSize"
+                />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/fragment_terms_conditions_close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="-10dp"
+        android:layout_marginBottom="-15dp"
+        android:text="×"
+        android:textSize="40dp"
+        android:textColor="@color/Blanco"
+        android:background="@drawable/rounded_close_button"
+        style="@style/ButtonStyle"
+        />
+
+</RelativeLayout>

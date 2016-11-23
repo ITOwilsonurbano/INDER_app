@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/reservation_row_one"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+        <View
+            android:id="@+id/reservation_circle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+        />
+        <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+            android:id="@+id/reservation_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/TitleSize"
+            />
+
+    </LinearLayout>
+    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+        android:id="@+id/reservation_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="-25dp"
+        android:layout_below="@+id/reservation_row_one"
+        android:gravity="right"
+        android:textColor="@color/Gris"
+        android:textSize="@dimen/DateSize"
+        />
+    <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+        android:id="@+id/reservation_row_discipline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/reservation_row_one"
+        android:textColor="@color/Negro"
+        android:textStyle="bold"
+        android:textSize="@dimen/SubtitleSize"
+        />
+
+    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+        android:id="@+id/reservation_row_one_name_sport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/Negro"
+        android:layout_marginLeft="62dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/reservation_row_discipline"
+        android:textSize="@dimen/ContentSize"
+        />
+
+
+</RelativeLayout>

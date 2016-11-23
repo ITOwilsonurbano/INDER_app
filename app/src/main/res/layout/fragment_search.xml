@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itosoftware.inderandroid.Fragments.SearchFragment"
+    android:id="@+id/fragment_search_participants"
+    android:background="@color/Blanco">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/fragment_search_row_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_search_escenarios"
+            android:layout_marginTop="5dp">
+
+            <AutoCompleteTextView
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:id="@+id/fragment_search_text"
+                android:layout_width="wrap_content"
+                android:dropDownWidth="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="Búsqueda de escenarios"
+                android:maxLength="150"
+                android:layout_weight="10">
+
+            </AutoCompleteTextView>
+            <Button
+                android:id="@+id/fragment_search_delete_text_button"
+                android:background="@drawable/ic_action_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/fragment_search_cancel_button"
+                android:layout_weight="1"
+                android:text="cancel"
+                android:gravity="center"
+                android:background="@color/Transparente"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/fragment_search_progress_bar"
+            android:background="@drawable/progress_animation"
+            android:layout_width="50dp"
+            android:layout_below="@+id/fragment_search_row_one"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+</FrameLayout>

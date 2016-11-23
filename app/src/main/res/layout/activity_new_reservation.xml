@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blanco">
+    <RelativeLayout
+        android:id="@+id/authorized"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Blanco">
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Blanco">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:id="@+id/fragment_new_reservation_row_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="30dp">
+
+                    <com.itosoftware.inderandroid.Utils.CircularNetworkImageView
+                        android:id="@+id/fragment_new_reservation_sport_image"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/content_reservation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp">
+
+                        <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                            android:id="@+id/fragment_new_reservation_sport_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/Verde"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/TitleSize" />
+
+                        <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                            android:id="@+id/fragment_new_reservation_sport_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textIsSelectable="false"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="@dimen/ContentSize"
+                            android:layout_below="@+id/fragment_new_reservation_sport_name"/>
+
+                        <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                            android:id="@+id/fragment_new_reservation_sport_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/ContentSize"
+                            android:layout_below="@+id/fragment_new_reservation_sport_address"/>
+
+                        <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                            android:id="@+id/fragment_new_reservation_button_change_sport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_alignParentRight="true"
+                            android:textStyle="bold"
+                            android:text="Cambiar escenario"
+                            android:textColor="@color/Verde"
+                            android:background="@color/Blanco"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:textSize="@dimen/ContentSize"
+                            android:layout_below="@+id/fragment_new_reservation_sport_phone"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/content_two"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/activity_leftRight_margin"
+                    android:layout_marginRight="@dimen/activity_leftRight_margin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="50dp"
+                    android:layout_below="@+id/fragment_new_reservation_row_one">
+
+                    <LinearLayout
+                        android:id="@+id/fragment_new_reservation_row_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Disciplina"
+                            android:layout_weight="2"
+                            android:textSize="@dimen/ContentSize"
+                            android:paddingBottom="10dp"
+                            />
+
+                        <Spinner
+                            android:id="@+id/fragment_new_reservation_discipline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner"
+                            android:padding="10dp"
+                            android:drawSelectorOnTop="true"
+                            ></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_new_reservation_row_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/fragment_new_reservation_row_two">
+
+                        <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Subdivisión"
+                            android:layout_weight="2"
+                            android:textSize="@dimen/ContentSize"
+                            android:paddingBottom="10dp"/>
+
+                        <Spinner
+                            android:id="@+id/fragment_new_reservation_subdivision"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner"
+                            android:padding="10dp"
+                            android:drawSelectorOnTop="true"
+                            ></Spinner>
+
+                    </LinearLayout>
+
+                    <com.itosoftware.inderandroid.graphicstest.FontButton
+                        android:id="@+id/fragment_new_reservation_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/Blanco"
+                        android:text="Elija un dìa"
+                        android:layout_marginBottom="20dp"
+                        android:layout_below="@+id/fragment_new_reservation_row_three"
+                        android:background="@drawable/rounded_verde"
+                        android:padding="10dp"
+                        android:textSize="@dimen/ContentSize"
+                        />
+                    <com.itosoftware.inderandroid.graphicstest.FontButton
+                        android:id="@+id/fragment_new_reservation_hour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/Blanco"
+                        android:text="Elija una hora"
+                        android:layout_marginBottom="20dp"
+                        android:layout_below="@+id/fragment_new_reservation_date"
+                        android:background="@drawable/rounded_verde"
+                        android:padding="10dp"
+                        android:textSize="@dimen/ContentSize"
+                        />
+
+                    <com.itosoftware.inderandroid.graphicstest.FontButton
+                        android:id="@+id/fragment_new_reservation_add_participants"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/Blanco"
+                        android:text="Ver/Agregar Participantes"
+                        android:layout_below="@+id/fragment_new_reservation_hour"
+                        android:background="@drawable/rounded_verde"
+                        android:padding="10dp"
+                        android:textSize="@dimen/ContentSize"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/fragment_new_reservation_row_five"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:layout_below="@+id/fragment_new_reservation_add_participants">
+
+                        <com.itosoftware.inderandroid.graphicstest.FontButton
+                            android:id="@+id/fragment_new_reservation_button_terms_conditions"
+                            android:text="@string/button_terms_conditions"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rounded"
+                            android:padding="10dp"
+                            android:textSize="@dimen/ContentSize"/>
+
+                        <com.itosoftware.inderandroid.graphicstest.FontCheckbox
+                            android:id="@+id/fragment_new_reservation_terms_conditions"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/accept_terms_conditions"
+                            android:gravity="center"
+                            android:textSize="@dimen/DateSize"
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/fragment_new_reservation_button_create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginLeft="@dimen/activity_leftRight_margin"
+                    android:layout_marginRight="@dimen/activity_leftRight_margin"
+                    android:layout_marginBottom="@dimen/activity_leftRight_margin"
+                    android:background="@drawable/rounded_verde"
+                    android:layout_below="@+id/content_two">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                        android:id="@+id/textView_button_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="12dp"
+                        android:text="Reservar"
+                        android:textColor="@color/Blanco"
+                        android:textSize="@dimen/TitleSize"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+        <ImageView
+            android:id="@+id/fragment_new_reservation_progress_bar"
+            android:background="@drawable/progress_animation"
+            android:layout_width="50dp"
+            android:layout_centerInParent="true"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/no_authorized"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:background="@color/Blanco">
+        <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+            android:id="@+id/message_no_authorized"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="@dimen/ContentSize"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/Verde"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_arrow"
+            android:tag="back"
+            android:longClickable="true" />
+
+        <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Registrar PQRS"
+            android:textColor="@color/Blanco"
+            android:textSize="20sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/fragment_pqr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                        android:id="@+id/radio_anonymous_ttl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="¿Procesar solicitud como anónimo?"
+                        android:textSize="@dimen/ContentSize" />
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/radio_anonymous"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/radio_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:buttonTint="@color/Verde"
+                            android:text="Sí"
+                            android:tag="si"
+                            />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/radio_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/Verde"
+                            android:text="No"
+                            android:tag="no"
+                            />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/personal_info_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/Verde"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Información personal del solicitante"
+                        android:textColor="@color/Blanco"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/fragment_user_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+
+                        <Spinner
+                            android:id="@+id/spinner_tipos_documento"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="18dp"
+                            android:paddingBottom="10dp"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_user_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+
+                        <com.itosoftware.inderandroid.graphicstest.FontEditText
+                            android:id="@+id/id_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_stroke"
+                            android:gravity="center"
+                            android:hint="Número de identificación"
+                            android:imeOptions="actionNext"
+                            android:maxLength="20"
+                            android:padding="10dp"
+                            android:textSize="@dimen/ContentSize"
+                            android:inputType="text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_user_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+
+                        <com.itosoftware.inderandroid.graphicstest.FontEditText
+                            android:id="@+id/names"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_stroke"
+                            android:gravity="center"
+                            android:hint="Nombre completo"
+                            android:imeOptions="actionNext"
+                            android:maxLength="255"
+                            android:padding="10dp"
+                            android:textSize="@dimen/ContentSize"
+                            android:inputType="textCapWords" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_user_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+
+                        <com.itosoftware.inderandroid.graphicstest.FontEditText
+                            android:id="@+id/phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_stroke"
+                            android:gravity="center"
+                            android:hint="Teléfono fijo"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="20"
+                            android:padding="10dp"
+                            android:textSize="@dimen/ContentSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_user_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+
+                        <com.itosoftware.inderandroid.graphicstest.FontEditText
+                            android:id="@+id/mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_stroke"
+                            android:gravity="center"
+                            android:hint="Teléfono celular"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="20"
+                            android:padding="10dp"
+                            android:textSize="@dimen/ContentSize" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_user_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                            android:id="@+id/radio_email_ttl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="left"
+                            android:text="¿Tiene correo electrónico?"
+                            android:textSize="@dimen/ContentSize" />
+
+                        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/radio_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatRadioButton
+                                android:id="@+id/radio_email_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:buttonTint="@color/Verde"
+                                android:text="Sí" />
+
+                            <android.support.v7.widget.AppCompatRadioButton
+                                android:id="@+id/radio_email_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/Verde"
+                                android:text="No" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_user_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+
+                        <com.itosoftware.inderandroid.graphicstest.FontEditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_stroke"
+                            android:gravity="center"
+                            android:hint="Correo electrónico"
+                            android:imeOptions="actionNext"
+                            android:maxLength="80"
+                            android:padding="10dp"
+                            android:textSize="@dimen/ContentSize"
+                            android:inputType="textEmailAddress|text" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_user_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+
+                        <com.itosoftware.inderandroid.graphicstest.FontEditText
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_stroke"
+                            android:gravity="center"
+                            android:hint="Dirección de la residencia"
+                            android:imeOptions="actionNext"
+                            android:maxLength="255"
+                            android:padding="10dp"
+                            android:textSize="@dimen/ContentSize"
+                            android:inputType="textCapSentences|text" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:background="@color/Verde"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="Información básica del solicitante"
+                android:textColor="@color/Blanco"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/fragment_pqr2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+
+                    <Spinner
+                        android:id="@+id/spinner_ciudades"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner"
+                        android:padding="10dp"
+                        android:tag="spinner_ciudades"
+                        ></Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_pqr4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Spinner
+                        android:id="@+id/spinner_comunas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="10dp"
+
+                        ></Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_pqr6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Spinner
+                        android:id="@+id/spinner_tipos_solicitud"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner"
+                        android:padding="10dp"></Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_pqr8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Spinner
+                        android:id="@+id/spinner_tematicas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner"
+                        android:padding="10dp"></Spinner>
+                </LinearLayout>
+
+
+                <com.itosoftware.inderandroid.graphicstest.FontEditText
+                    android:id="@+id/mensaje"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_stroke"
+                    android:gravity="top"
+                    android:hint="Mensaje"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:padding="10dp"
+                    android:textSize="@dimen/ContentSize"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Subir archivo"
+                    android:tag="upload"
+                    style="@style/boton_upload_file_pqrs"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/uploated_zone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/upload_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:maxHeight="200dp"
+                            android:src="@drawable/ic_picture"
+                            android:tag="upload_image" />
+
+                        <ImageView
+                            android:id="@+id/delete_upload_file"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:src="@android:drawable/ic_delete"
+                            android:tag="delete_upload_file" />
+                    </RelativeLayout>
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                        android:id="@+id/filename"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="10dp"
+                        android:text="Documento"
+                        android:textColor="@color/Negro"
+                        android:textSize="@dimen/ContentSize"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/fragment_pqr_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_verde"
+                android:tag="end"
+                android:text="Finalizar"
+                android:textColor="@color/Blanco"
+                android:textSize="@dimen/TitleSize" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

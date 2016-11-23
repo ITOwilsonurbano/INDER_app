@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PlaceHolders -->
+    <string name="step_one_document">Nº de Documento</string>
+    <string name="step_one_name_one">Primer Nombre</string>
+    <string name="step_one_name_two">Segundo Nombre</string>
+    <string name="step_one_last_name_one">Primer Apellido</string>
+    <string name="step_one_last_name_two">Segundo Apellido</string>
+    <string name="step_one_description">Realiza tu registro en solo 4 pasos.</string>
+    <string name="step_two_phone">Teléfono fijo</string>
+    <string name="step_two_optional_phone">Teléfono Opcional</string>
+    <string name="step_two_celphone">Celular</string>
+
+    <string name="step_four_username">Nombre de Usuario</string>
+    <string name="step_four_password">Contraseña</string>
+    <string name="step_four_repeat_password">Repetir Contraseña</string>
+    <string name="step_four_mail">Correo Electrónico</string>
+
+
+    <!-- Spinners -->
+    <string-array name="spinner_documnet_type">
+        <item>TARJETA DE RESEÑA CÁRCEL</item>
+        <item>REGISTRO CIVIL</item>
+        <item>SIN DOCUMENTO</item>
+        <item>TARJETA DE IDENTIDAD</item>
+        <item>NUMERO ÚNICO DE IDENTIFICACIÓN PERSONAL</item>
+        <item>CÉDULA DE CIUDADANÍA</item>
+        <item>CÉDULA DE EXTRANJERIA</item>
+        <item>PASAPORTE</item>
+        <item>IDENTIFICACION TRIBUTARIA</item>
+    </string-array>
+
+    <string-array name="spinner_sex">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+    <string-array name="spinner_etnia">
+        <item>Raizal</item>
+        <item>Afrodescendiente</item>
+        <item>Inidigena</item>
+        <item>Ninguna</item>
+        <item>Rom</item>
+    </string-array>
+
+    <string-array name="spinner_yes_no">
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="spinner_displaced_type">
+        <item>Declarante</item>
+        <item>Declarante Con Reconocimiento</item>
+    </string-array>
+
+    <string-array name="spinner_hadicapped_type">
+        <item>Cognitiva</item>
+        <item>Fisica</item>
+        <item>Sensorial</item>
+        <item>Imoc</item>
+        <item>Movilidad Limitada</item>
+        <item>Mental</item>
+    </string-array>
+
+    <string-array name="spinner_hadicapped_subtype">
+        <item>Psiquica</item>
+        <item>Silla de ruedas</item>
+        <item>Talla Baja</item>
+        <item>Tactil</item>
+        <item>Visual</item>
+    </string-array>
+
+    <string-array name="spinner_country">
+        <item>Argentina</item>
+        <item>Bolivia</item>
+        <item>Brasil</item>
+        <item>Colombia</item>
+        <item>Venezuela</item>
+    </string-array>
+
+    <string-array name="spinner_depataments">
+        <item>Amazonas</item>
+        <item>Antioquia</item>
+        <item>Atlantico</item>
+        <item>Cundinamarca</item>
+        <item>Cordoba</item>
+        <item>Huila</item>
+        <item>Tolima</item>
+    </string-array>
+
+    <string-array name="spinner_town">
+        <item>Abejorral</item>
+        <item>Medellin</item>
+        <item>Bello</item>
+        <item>Envigado</item>
+        <item>Rionegro</item>
+    </string-array>
+
+    <string-array name="spinner_zone">
+        <item>CENTROCCIDENTAL</item>
+    </string-array>
+
+    <string-array name="spinner_commune">
+        <item>BUENOS AIRES </item>
+        <item>LA CANDELARIA</item>
+        <item>VILLA HERMOSA</item>
+    </string-array>
+
+    <string-array name="spinner_stratum">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="spinner_neighborhood">
+        <item>ALEJANDRO ECHAVARRIA</item>
+        <item>ASOMADERA NO.1</item>
+        <item>ASOMADERA NO.2</item>
+        <item>ASOMADERA NO.3</item>
+    </string-array>
+
+    <string-array name="spinner_eps">
+        <item>ALIANSALUD</item>
+        <item>ANDISALUD</item>
+        <item>ASMET SALUD</item>
+        <item>BIOSIGNO</item>
+        <item>BOLIVAR</item>
+        <item>CAFESALUD.2</item>
+        <item>CAMACOL</item>
+        <item>CAPRECOM NIVEL 1</item>
+        <item>CAPRECOM NIVEL 2</item>
+    </string-array>
+
+    <string-array name="spinner_economy_activity">
+        <item>AMA DE CASA</item>
+        <item>DESEMPLEADO(A)</item>
+        <item>ESTUDIANTE</item>
+        <item>EMPLEADO(A)</item>
+        <item>INDEPENDIENTE</item>
+        <item>PENSIONADO(A)/JUBILADO(A)</item>
+        <item>NO SABE / NO RESPONDE</item>
+        <item>OTRA</item>
+    </string-array>
+
+    <string-array name="spinner_grade_level">
+        <item>NINGUNA</item>
+        <item>NO SABE/NO RESPONDE </item>
+        <item>POSGRADO</item>
+        <item>PREESCOLAR</item>
+        <item>PRIMARIA</item>
+        <item>SECUNDARIA</item>
+        <item>TECNICA</item>
+        <item>TECNOLOGICA</item>
+        <item>UNIVERSITARIA</item>
+    </string-array>
+
+    <string-array name="spinner_last_year_approbate">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
+    <string-array name="spinner_school_type">
+        <item>OFICIAL</item>
+        <item>PRIVADO</item>
+        <item>NINGUNOD</item>
+    </string-array>
+
+    <string-array name="main_street_names">
+        <item>Avenida </item>
+        <item>Bulevar </item>
+        <item>Calle </item>
+        <item>Carrera </item>
+        <item>Carretera </item>
+        <item>Circular </item>
+        <item>Circunvalar </item>
+        <item>Diagonal </item>
+        <item>Transversal </item>
+        <item>Troncal </item>
+        <item>Variante </item>
+        <item>Vía </item>
+        <item>Corregimiento</item>
+        <item>Kilómetro</item>
+        <item>Vereda</item>
+        <item>Autopista </item>
+    </string-array>
+
+    <string-array name="main_street_codes">
+        <item>AV</item>
+        <item>BLV</item>
+        <item>CL</item>
+        <item>CR</item>
+        <item>CRT</item>
+        <item>CIR</item>
+        <item>CRV</item>
+        <item>DG</item>
+        <item>TV</item>
+        <item>TC</item>
+        <item>VT</item>
+        <item>VI</item>
+        <item>CRG</item>
+        <item>KM</item>
+        <item>VEREDA</item>
+        <item>AUT</item>
+    </string-array>
+
+    <string-array name="cordinate">
+        <item>Este</item>
+        <item>Norte</item>
+        <item>Oeste</item>
+        <item>Sur</item>
+    </string-array>
+
+    <string-array name="letter">
+        <item >A </item>
+        <item >AA </item>
+        <item >AB </item>
+        <item >AC </item>
+        <item >AD </item>
+        <item >AE </item>
+        <item >AF </item>
+        <item >AG </item>
+        <item >AH </item>
+        <item >B </item>
+        <item >BB </item>
+        <item >BA </item>
+        <item >BC </item>
+        <item >BD </item>
+        <item >BE </item>
+        <item >BF </item>
+        <item >BG </item>
+        <item >BH </item>
+        <item >C </item>
+        <item >CC </item>
+        <item >CA </item>
+        <item >CB </item>
+        <item >CD </item>
+        <item >CE </item>
+        <item >CF </item>
+        <item >CG </item>
+        <item >CH </item>
+        <item >D </item>
+        <item >DD </item>
+        <item >DA </item>
+        <item >DB </item>
+        <item >DC </item>
+        <item >DE </item>
+        <item >DF </item>
+        <item >DG </item>
+        <item >DH </item>
+        <item >E </item>
+        <item >EE </item>
+        <item >EA </item>
+        <item >EB </item>
+        <item >EC </item>
+        <item >ED </item>
+        <item >EF </item>
+        <item >EG </item>
+        <item >EH </item>
+        <item >F </item>
+        <item >FF </item>
+        <item >FA </item>
+        <item >FB </item>
+        <item >FC </item>
+        <item >FD </item>
+        <item >FE </item>
+        <item >FG </item>
+        <item >FH </item>
+        <item >G </item>
+        <item >GG </item>
+        <item >GA </item>
+        <item >GB </item>
+        <item >GC </item>
+        <item >GD </item>
+        <item >GE </item>
+        <item >GF </item>
+        <item >GH </item>
+        <item >H </item>
+        <item >HH </item>
+        <item >HA </item>
+        <item >HB </item>
+        <item >HC </item>
+        <item >HD </item>
+        <item >HE </item>
+        <item >HF </item>
+        <item >HG </item>
+    </string-array>
+
+
+    <!-- Text Buttons -->
+    <string name="button_next">Siguiente Paso</string>
+    <string name="button_for_register">Registrarse</string>
+    <string name="button_terms_conditions">Ver Términos y Condiciones</string>
+    <string name="button_pick_born_date">Fecha de Nacimiento</string>
+    <string name="accept_terms_conditions">Aceptar Términos y Condiciones.</string>
+</resources>
+

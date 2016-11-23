@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Naranja">#F68D35</color>
+    <color name="Blanco">#ffffff</color>
+    <color name="Verde">#40a738</color>
+    <color name="Negro">#000000</color>
+    <color name="Rojo">#ffff0004</color>
+    <color name="Gris">#4b979499</color>
+    <color name="GrisClaro">#EFEFEF</color>
+    <color name="GrisOscuro">#747474</color>
+    <color name="GrisOscuroTransparente">#40747474</color>
+    <color name="Transparente">#00000000</color>
+    <color name="GrisTransparente">#1A000000</color>
+    <color name="BlancoTransparente">#40ffffff</color>
+    <color name="Amarillo">#F8E71C</color>
+    <color name="VerdeOpaco">#8040A738</color>
+    <color name="VerdeTransparente">#4040A738</color>
+    <color name="GrisFondos">#cdcdcd</color>
+    <color name="GrisTextos">#5d5d5d</color>
+    <color name="NegroTransparente">#66000000</color>
+    <color name="NegroTransparente70">#B3000000</color>
+    <color name="BlancoTransparente70">#B3ffffff</color>
+    <color name="VerdeTransparente40">#6640A738</color>
+
+</resources>
+
+

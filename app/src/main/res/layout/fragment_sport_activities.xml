@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/map_container"
+    tools:context=".SportActivitiesFragment">
+
+    <!--<com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/map_activities"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1" />-->
+
+    <WebView
+        android:id="@+id/map_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <RelativeLayout
+        android:id="@+id/btn_getgps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_white_shadow"
+        android:clickable="true"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/img_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_gps" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_sport_activities_content_sports_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_search_escenarios">
+
+        <RelativeLayout
+            android:id="@+id/fragment_sport_activities_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/fragment_sport_activities_search_advance">
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                android:id="@+id/text_btn_sports_activities_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="Búsqueda de ofertas"
+                android:textColor="@color/NegroTransparente70"
+                android:textSize="@dimen/TitleSize"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/image_search"/>
+
+            <ImageView
+                android:id="@+id/image_search"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_action_search2"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/fragment_sport_activities_search_advance"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_action_search_advanced2"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+        android:id="@+id/fragment_sport_activities_no_activities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="30dp"
+        android:text="Estamos actualizando esta sección. Para más información ingrese a "
+        android:textSize="@dimen/ContentSize"
+        />
+    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+        android:id="@+id/fragment_sport_activities_no_activities_two"
+        android:layout_below="@+id/fragment_sport_activities_no_activities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:clickable="true"
+        android:text="www.inder.gov.co"
+        android:textSize="@dimen/ContentSize"
+        />
+
+
+    <ImageView
+        android:id="@+id/fragment_sport_activities_progressbar"
+        android:background="@drawable/progress_animation"
+        android:layout_centerInParent="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>
+

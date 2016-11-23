@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Spinners -->
+    <string-array name="spinner_discipline">
+        <item>Baloncesto</item>
+        <item>Natación</item>
+        <item>Futbol</item>
+        <item>Tennis</item>
+        <item>Ultimate</item>
+        <item>Gimnasia</item>
+    </string-array>
+
+    <string-array name="spinner_subdivisión">
+        <item>Subdivision A</item>
+        <item>Subdivision B</item>
+        <item>Subdivision C</item>
+        <item>Subdivision D</item>
+        <item>Subdivision E</item>
+    </string-array>
+
+
+
+</resources>

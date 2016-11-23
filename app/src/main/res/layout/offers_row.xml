@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="6dp"
+    android:background="@color/Blanco"
+    android:paddingTop="6dp">
+
+    <!-- Offer -->
+    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+        android:id="@+id/offers_row_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:gravity="center"
+        android:typeface="sans"
+        android:layout_centerVertical="true"
+        android:textColor="@color/Verde"
+        android:textSize="@dimen/ContentSize"
+         />
+
+</RelativeLayout>
+
+

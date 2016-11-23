@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blanco"
+    >
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/activity_leftRight_margin"
+        android:layout_marginRight="@dimen/activity_leftRight_margin"
+        android:layout_marginTop="20dp"
+        >
+
+        <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+            android:id="@+id/title"
+            android:layout_width="236dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/Verde"
+            android:textSize="@dimen/TitleSize"
+            android:textStyle="bold"
+            />
+        <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:textColor="@color/Verde"
+            android:textSize="@dimen/DateSize"
+            />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:layout_marginLeft="@dimen/activity_leftRight_margin"
+        android:layout_marginRight="@dimen/activity_leftRight_margin"
+        android:layout_marginTop="7dp">
+        <ImageView
+            android:id="@+id/progressbar"
+            android:background="@drawable/progress_animation"
+            android:layout_centerInParent="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/networkImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:elevation="1dp"
+            />
+        <View
+            android:id="@+id/fragment_news_shadow"
+            android:layout_below="@+id/networkImageView"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/shadow"
+            >
+        </View>
+
+    </RelativeLayout>
+
+    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/activity_leftRight_margin"
+        android:layout_marginRight="@dimen/activity_leftRight_margin"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:textSize="@dimen/ContentSize"
+        android:gravity="left"
+        android:textColor="@color/Naranja"
+        />
+
+</LinearLayout>

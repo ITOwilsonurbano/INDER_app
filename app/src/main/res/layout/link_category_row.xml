@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/category_link_bottom_stroke">
+
+    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+        android:id="@+id/link_category_row_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:typeface="sans"
+        android:layout_marginLeft="20dp"
+        android:gravity="left"
+        android:layout_centerVertical="true"
+        android:textColor="@color/GrisTextos"
+        android:textSize="@dimen/ContentSize"
+        android:text="Link Categoria"
+         />
+
+    <!--  Delete Image
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/delete_row_participant"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:src="@drawable/icon_select"/>
+
+    </LinearLayout>-->
+
+
+
+</RelativeLayout>
+
+

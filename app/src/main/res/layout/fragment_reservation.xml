@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/Blanco"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fragment_reservation">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_reservation_swipe"
+        >
+        <ListView
+            android:id="@+id/reservations_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:divider="@drawable/reservation_list_divider"
+            android:dividerHeight="1dp"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include layout="@layout/layout_login_on_reservation" />
+    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+        android:layout_marginTop="20dp"
+        android:id="@+id/fragment_reservation_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Usted no ha realizado solicitudes de reserva"
+        android:textSize="@dimen/ContentSize"
+        android:paddingBottom="10dp"/>
+    <ImageView
+        android:id="@+id/fragment_reservation_progressbar"
+        android:background="@drawable/progress_animation"
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+</RelativeLayout>
