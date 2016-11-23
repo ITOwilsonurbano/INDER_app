@@ -1,0 +1,9 @@
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/circle_shadow"/>
+    <item
+        android:drawable="@drawable/circle_yellow"
+        android:bottom="5px" />
+
+</layer-list>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blanco">
+
+    <LinearLayout
+        android:id="@+id/activity_settings_row_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="30dp"
+        >
+        <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+            android:layout_marginTop="3dp"
+            android:id="@+id/activity_settings_row_one_text"
+            android:text=" ¿ Permitir notificaciones de noticias ?"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/ContentSize"
+            />
+        <com.itosoftware.inderandroid.graphicstest.FontCheckbox
+            android:id="@+id/activity_settings_row_one_check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/ContentSize"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_settings_row_two"
+        android:layout_below="@+id/activity_settings_row_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        >
+        <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+            android:layout_marginTop="3dp"
+            android:id="@+id/activity_settings_row_two_text"
+            android:text=" ¿ Permitir notificaciones de reservas ?"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/ContentSize"
+            />
+        <com.itosoftware.inderandroid.graphicstest.FontCheckbox
+            android:id="@+id/activity_settings_row_two_check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/ContentSize"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

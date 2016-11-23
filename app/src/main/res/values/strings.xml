@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Inder</string>
+
+    <string name="filtro_reservation">Filtro</string>
+    <!-- Titles Fragments -->
+    <string name="title_sports">Escenarios</string>
+    <string name="title_sports_activities">Oferta</string>
+    <string name="title_links_inder">Inder</string>
+    <string name="title_news">Noticias</string>
+    <string name="title_recommended">Enlaces</string>
+    <string name="title_reservation">Mis reservas</string>
+    <string name="title_user_atention">Contacto</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="welcome">Welcome To Colombia</string>
+
+    <!-- Buttons -->
+    <string name="button_reservation">Hacer Reserva</string>
+    <string name="button_call">Llamar</string>
+    <string name="button_register">Regístrate</string>
+    <string name="button_forget_password">¿Olvidaste tu contraseña?</string>
+    <string name="button_forget_user">¿Olvidaste tu usuario?</string>
+    <string name="button_user_recovery">Recuperar</string>
+
+    <!-- Texts -->
+    <string name="text_user_name">Nombre de Usuario</string>
+    <string name="text_password">Contraseña</string>
+    <string name="text_ingresar">Ingresar</string>
+    <string name="text_user_recovery">usuario@inder.com</string>
+    <string name="text_busca_participantes">Busca y agrega a los participantes que te acompañarán en la reserva.</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_forget_user">ForgetUserActivity</string>
+    <string name="title_activity_forget_password">ForgetPasswordActivity</string>
+    <string name="title_activity_new_reservation">NewReservationActivity</string>
+    <string name="title_activity_new_detail">NewsDetailActivity</string>
+    <string name="title_activity_reservation_detail">ReservationDetailActivity</string>
+    <string name="title_activity_recommended_detail">RecommendedDetailActivity</string>
+    <string name="title_activity_linksInder_detail">LinksInderDetailActivity</string>
+    <string name="title_activity_sportsActivity">Splash</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="image">image</string>
+    <string name="Inder">Inder</string>
+    <string name="google_play_ad">Debes tener instalado Google Play Services para disfrutar esta APP</string>
+    <string name="title_activity_offer_detail">OfferDetailActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_document">DocumentActivity</string>
+    <string name="detail_notice" />
+    <string name="detil_notice" />
+
+</resources>

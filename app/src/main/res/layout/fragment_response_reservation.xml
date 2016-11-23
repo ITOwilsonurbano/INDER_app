@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blanco"
+    tools:context="com.itosoftware.inderandroid.Fragments.ResponseReservationFragment">
+
+    <!-- Scrollable Item above footer -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="20dp">
+            <RelativeLayout
+                android:id="@+id/content_register_rows"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                >
+                <ImageView
+                    android:id="@+id/fragment_response_reservation_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/reservation_finish" />
+
+                <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                    android:id="@+id/fragment_response_reservation_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Solicitud de Reserva."
+                    android:gravity="center"
+                    android:textColor="@color/Verde"
+                    android:layout_below="@+id/fragment_response_reservation_image"
+                    android:textSize="@dimen/ContentSize"/>
+
+                <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                    android:id="@+id/fragment_response_reservation_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/ContentSize"
+                    android:layout_below="@+id/fragment_response_reservation_text"
+                    />
+
+                <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                    android:id="@+id/fragment_response_reservation_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@+id/fragment_response_reservation_date"
+                    android:textSize="@dimen/ContentSize"/>
+
+                <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                    android:id="@+id/fragment_response_reservation_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recuerda que las solicitudes de las reservas son sometidas a aprobación por INDER, puedes consultar el estado en el botón 'Reservas'."
+                    android:gravity="center"
+                    android:layout_below="@+id/fragment_response_reservation_status"
+                    android:textSize="@dimen/ContentSize"/>
+
+                <com.itosoftware.inderandroid.graphicstest.FontButton
+                    android:id="@+id/fragment_response_reservation_button_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/Verde"
+                    android:text="Finalizar"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@+id/fragment_response_reservation_description"
+                    android:background="@drawable/rounded_blanco"
+                    android:padding="10dp"
+                    android:textSize="@dimen/ContentSize"
+                    />
+                <com.itosoftware.inderandroid.graphicstest.FontButton
+                    android:id="@+id/fragment_response_reservation_button_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/Blanco"
+                    android:text="Hacer Otra Reserva"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@+id/fragment_response_reservation_button_finish"
+                    android:background="@drawable/rounded_verde"
+                    android:padding="10dp"
+                    android:textSize="@dimen/ContentSize"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

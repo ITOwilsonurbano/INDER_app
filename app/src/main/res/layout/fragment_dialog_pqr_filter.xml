@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Buscar PQRS"
+                        android:textColor="@color/GrisTextos"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/close_icon"
+                        android:tag="back" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="horizontal"
+                    android:background="@color/Gris">
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:id="@+id/fragment_filter_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+
+                    <com.itosoftware.inderandroid.graphicstest.FontEditText
+                        android:id="@+id/numero_solicitud"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_stroke"
+                        android:gravity="start"
+                        android:hint="Número solicitud"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:textSize="@dimen/ContentSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_filter_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+
+                    <com.itosoftware.inderandroid.graphicstest.FontEditText
+                        android:id="@+id/identificacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_stroke"
+                        android:gravity="start"
+                        android:hint="Identificación"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:textSize="@dimen/ContentSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Buscar por fecha de registro"
+                        android:textColor="@color/Verde"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_filter_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontEditText
+                        android:id="@+id/fecha_desde_txt"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:nextFocusUp="@id/fecha_desde_txt"
+                        android:nextFocusLeft="@id/fecha_desde_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_stroke"
+                        android:gravity="start"
+                        android:hint="Fecha desde"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:textSize="@dimen/ContentSize" />
+
+                    <ImageView
+                        android:id="@+id/fecha_desde_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_cancel" />
+
+                    <ImageView
+                        android:id="@+id/fecha_desde_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/action_reservation" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_filter_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontEditText
+                        android:id="@+id/fecha_hasta2_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_stroke"
+                        android:gravity="start"
+                        android:hint="Fecha hasta"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:textSize="@dimen/ContentSize" />
+
+                    <ImageView
+                        android:id="@+id/fecha_hasta2_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_cancel" />
+
+                    <ImageView
+                        android:id="@+id/fecha_hasta2_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/action_reservation" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/filtrar_pqrs"
+                    android:tag="filtrar_pqrs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragment_register_one_row_sixteen"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/rounded_verde"
+                    android:text="Ejecutar"
+                    android:textColor="@color/Blanco"
+                    android:textSize="@dimen/TitleSize" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

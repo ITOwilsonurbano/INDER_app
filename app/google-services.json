@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "302889663461",
+    "project_id": "inder-1119"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302889663461:android:5378c818f11ab50f",
+        "android_client_info": {
+          "package_name": "com.itosoftware.inderandroid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtdllEncuypxbV2AyVPK3BG8hKKVv5HEc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

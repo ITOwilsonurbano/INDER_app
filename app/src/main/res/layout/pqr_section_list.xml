@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--card_view:cardCornerRadius="4dp"-->
+    <!--card_view:cardElevation="2dp"-->
+    <!--card_view:cardUseCompatPadding="true">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@color/GrisClaro"
+        android:padding="10dp"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Número de proceso:"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                android:id="@+id/numero_proceso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="234234"
+                android:textColor="@color/GrisTextos"
+                android:textSize="14sp"
+                android:autoText="true"
+                android:textStyle="normal" />
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Número de solicitud:"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                android:id="@+id/numero_solicitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="234234"
+                android:textColor="@color/GrisTextos"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Identificación:"
+                android:textIsSelectable="false"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                android:id="@+id/identificacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="657756745267"
+                android:textColor="@color/GrisTextos"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Fecha de registro:"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                android:id="@+id/fecha_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="2016-06-01"
+                android:textColor="@color/GrisTextos"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--</android.support.v7.widget.CardView>-->
+</LinearLayout>

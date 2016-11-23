@@ -1,0 +1,99 @@
+<!-- <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itosoftware.inderandroid.Fragments.ShowParticipantsFragment"
+    android:id="@+id/fragment_add_participants"
+    > -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="10dp"
+        android:background="@color/NegroTransparente70">
+
+        <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:text="@string/text_busca_participantes"
+            android:textSize="@dimen/ContentSize"
+            android:textColor="@color/Blanco"
+            android:layout_toLeftOf="@+id/fragment_add_participants_close_button"
+            android:layout_toStartOf="@+id/fragment_add_participants_close_button" />
+
+        <Button
+            android:id="@+id/fragment_add_participants_close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="-10dp"
+            android:layout_marginBottom="-15dp"
+            android:text="×"
+            android:textSize="40dp"
+            android:textColor="@color/Blanco"
+            android:background="@drawable/rounded_close_button"
+            style="@style/ButtonStyle"
+            />
+
+        <LinearLayout
+            android:id="@+id/fragment_add_participants_row_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/fragment_add_participants_close_button">
+
+            <com.itosoftware.inderandroid.graphicstest.FontEditText
+                android:hint="Nº de documento"
+                android:id="@+id/fragment_add_participants_add"
+                android:layout_width="wrap_content"
+                android:inputType="number"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_stroke"
+                android:padding="10dp"
+                />
+            <Button
+                android:text="Agregar"
+                android:id="@+id/fragment_add_participants_add_button"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edittext"
+                android:textColor="@color/Blanco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/fragment_add_participants_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/fragment_add_participants_row_one"
+            android:divider="@drawable/divider_addparticipants_list"
+            android:dividerHeight="1dp"
+            />
+        <ImageView
+            android:id="@+id/fragment_add_participants_progressbar"
+            android:background="@drawable/progress_animation"
+            android:layout_centerInParent="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+
+
+
+

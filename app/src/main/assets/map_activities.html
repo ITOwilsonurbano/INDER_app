@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      @font-face {
+        font-family: HelveticaNeueLTStdBd;
+        src: url(HelveticaNeueLTStd-BdCn.otf);
+      }
+
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+
+      .gm-style-iw {
+        background-color: rgba(0, 0, 0, 0.7);
+        /*box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);*/
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 20px 20px 20px 20px;
+      }
+
+      .iw-container {
+        font-family: HelveticaNeueLTStdBd;
+        width: 100%;
+        margin-left: -5%;
+        padding: 20px;
+        /*margin-left: 10px;
+        margin-bottom: 10px;*/
+        color: #fff;
+        font-size: 17px;
+        text-align: center;
+      }
+
+      .labelMarker {
+        box-sizing:border-box;
+        background: #40A738;
+        /*box-shadow: 2px 2px 4px #333;*/
+        border:2px solid #FFFFFF;
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        -webkit-animation: pulse 1s ease 1s 3;
+        -moz-animation: pulse 1s ease 1s 3;
+        animation: pulse 1s ease 1s 3;
+      }
+
+      /* ANIMATIONS */
+      @-webkit-keyframes pulse {
+       40% {
+          -webkit-transform: scale(0.9);
+          -moz-transform: scale(0.9);
+          transform: scale(0.9);
+        }
+
+        100% {
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      @keyframes pulse {
+        40% {
+          -webkit-transform: scale(0.9);
+          -moz-transform: scale(0.9);
+          transform: scale(0.9);
+        }
+
+        100% {
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBrUtdE4qlX3NYvBZf-WL6eQoCaHIao2-g&sensor=false"></script>
+    <script type="text/javascript" src="https://google-maps-utility-library-v3.googlecode.com/svn-history/r391/trunk/markerwithlabel/src/markerwithlabel.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="markerclusterer.js"></script>
+  </head>
+    
+    <body onload="initialize()">
+      <div id="map"></div>
+      <script type="text/javascript" src="logica_activities.js"></script>
+    </body>
+</html>

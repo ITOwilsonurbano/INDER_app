@@ -1,0 +1,89 @@
+<resources>
+    <string name="news_list">api/v1/noticias</string>
+    <string name="new_id">api/v1/noticias/%1$s</string>
+    <string name="lnks_inder_list">api/v1/enlaces</string>
+    <string name="reservations_list">api/v1/noticias</string>
+    <string name="recommended_list">api/v1/recomendados</string>
+    <string name="scenarios_list">api/v1/escenarios</string>
+    <string name="offers_list">api/v1/puntos_atencion</string>
+    <string name="schedule_offer">api/v1/puntos_atencion/%1$s/ofertas/%2$s/horario</string>
+
+    <!-- PROD -->
+
+    <string name="url">http://api.inder.gov.co/</string>
+    <string name="client_id">1_4enb3yybiyw40cc4wk0gw404wcc0sw4gskwgs0ks0cowggw8sk</string>
+    <string name="client_secret">169ajev6l37k8g004o8c8wgcgwoc8oc4k8gw4sk40w4sc8oscg</string>
+
+    <!-- FIN PROD -->
+
+    <!-- DEV -->
+
+    <!--<string name="url">http://10.0.1.35/</string>-->
+    <!--<string name="client_id">1_64zuqn6w2884wg0w08gs4kc4swkso0gok8w0804ook4o8swssw</string>-->
+    <!--<string name="client_secret">301sjhet9we8c40w80gg4og0sg0cgwoks4og40wookgok4cok4</string>-->
+
+    <!-- FIN DEV -->
+
+    <!--User Login-->
+    <string name="user_authenticated">api/v1/user/login</string>
+
+    <string name="grant_type">password</string>
+    <string name="profile">api/v1/user/profile?access_token=</string>
+    <string name="refresh_token">oauth/v2/token</string>
+
+    <string name="username">info@ito-software.com</string>
+    <string name="password">itosoftware</string>
+
+    <!--Register-->
+    <string name="document_type_list">api/v1/tipos_documento</string>
+    <string name="etnia_list">api/v1/etnias</string>
+    <string name="handicapped_type_list">api/v1/tipos_discapacidad</string>
+    <string name="handicapped_subtype_list">api/v1/subtipos_discapacidad</string>
+    <string name="schools_list">api/v1/instituciones</string>
+    <string name="type_schools_list">api/v1/tipos_instituciones</string>
+
+    <string name="countries_list">api/v1/paises</string>
+    <string name="states_list">api/v1/pais/{pais_id}/departamentos</string>
+    <string name="towns_list">api/v1/pais/{pais_id}/departamentos/{departamento_id}/municipios</string>
+    <string name="zones_list">api/v1/pais/{pais_id}/departamentos/{departamento_id}/municipios/{municipio_id}/zonas</string>
+    <string name="communes_list">api/v1/pais/{pais_id}/departamentos/{departamento_id}/municipios/{municipio_id}/zonas/{zona_id}/comunas</string>
+    <string name="neighborhoods_list">api/v1/pais/{pais_id}/departamentos/{departamento_id}/municipios/{municipio_id}/zonas/{zona_id}/comunas/{comuna_id}/barrios</string>
+
+    <string name="eps_list">api/v1/eps</string>
+    <string name="grade_level_list">api/v1/niveles_escolaridad</string>
+    <string name="main_activity_list">api/v1/actividades_economicas</string>
+    <string name="registro_usuario">api/v1/user</string>
+
+    <!--Data For Zones of Medellin-->
+    <string name="colombia_id">49</string>
+    <string name="antioquia_id">744</string>
+    <string name="medellin_id">73</string>
+
+    <!--New Reservations-->
+    <string name="disciplines_list">api/v1/escenarios/%1$s/disciplinas</string>
+    <string name="subdivisions_list">api/v1/escenarios/%1$s/disciplinas/%2$s/subdivisiones</string>
+    <string name="add_participants">api/v1/user/%1$s</string>
+    <string name="add_new_reservation">api/v1/reservas</string>
+    <string name="get_dates">api/v1/escenarios/{escenario_id}/disponibilidades/{fecha}</string>
+    <string name="search_reservation">api/v1/reservas</string>
+    <string name="search_reservation_id">api/v1/reservas/%1$s</string>
+    <string name="cancelReservation">api/v1/reservas/%1$s</string>
+    <string name="terminos">api/v1/terminos</string>
+    <string name="search_participants">api/v1/reservas/{reserva_id}/participantes</string>
+
+    <!--New Devices-->
+    <string name="add_new_device">api/v1/dispositivos</string>
+
+    <!--pqr-->
+    <string name="url_pqr">http://bpms.inder.gov.co/int_bpms_inder_rest/</string>
+    <!--<string name="url_pqr">http://10.0.1.35/</string>-->
+    <string name="pqr_client_id">bpms</string>
+    <string name="pqr_client_secret">polbpms</string>
+    <string name="pqr_states">api/v1/ciudad</string>
+    <string name="pqr_communes">api/v1/municipios/{municipio_id}/comunas</string>
+    <string name="pqr_solicitude_type">api/v1/tipos_solicitud</string>
+    <string name="pqr_themes">api/v1/tematicas</string>
+    <string name="pqr_document_types">api/v1/tipos_identificacion</string>
+    <string name="pqr_send">api/v1/pqrs</string>
+    <!--<string name="pqr_send">index.php</string>-->
+</resources>

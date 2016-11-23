@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="Detalle PQR"
+                            android:textColor="@color/GrisTextos"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/close_icon"
+                            android:tag="back" />
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="horizontal"
+                    android:background="@color/Gris">
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:background="@color/GrisClaro"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Estado:"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/ContentSize"
+                        android:textColor="@color/GrisOscuro"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"/>
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                        android:id="@+id/estado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="estado"
+                        android:textColor="@color/Verde"
+                        android:textSize="@dimen/ContentSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Número de proceso:"
+                        android:textSize="@dimen/ContentSize"
+                        android:textColor="@color/GrisOscuro" />
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                        android:id="@+id/numero_proceso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text=""
+                        android:textColor="@color/GrisTextos"
+                        android:textSize="@dimen/ContentSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Número de solicitud:"
+                        android:textSize="@dimen/ContentSize"
+                        android:textColor="@color/GrisOscuro" />
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                        android:id="@+id/numero_solicitud"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text=""
+                        android:textColor="@color/GrisTextos"
+                        android:textSize="@dimen/ContentSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Identificación:"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/ContentSize"
+                        android:textColor="@color/GrisOscuro" />
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                        android:id="@+id/identificacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text=""
+                        android:textColor="@color/GrisTextos"
+                        android:textSize="@dimen/ContentSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Fecha de registro:"
+                        android:textSize="@dimen/ContentSize"
+                        android:textColor="@color/GrisOscuro" />
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                        android:id="@+id/fecha_registro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text=""
+                        android:textColor="@color/GrisTextos"
+                        android:textSize="@dimen/ContentSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Fecha estimada respuesta:"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/ContentSize"
+                        android:textColor="@color/GrisOscuro" />
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                        android:id="@+id/fecha_estimada_respuesta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text=""
+                        android:textColor="@color/GrisTextos"
+                        android:textSize="@dimen/ContentSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Fecha de respuesta:"
+                        android:textSize="@dimen/ContentSize"
+                        android:textColor="@color/GrisOscuro" />
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                        android:id="@+id/fecha_respuesta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text=""
+                        android:textColor="@color/GrisTextos"
+                        android:textSize="@dimen/ContentSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Funcionario responsable:"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/ContentSize"
+                        android:textColor="@color/GrisOscuro" />
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                        android:id="@+id/funcionario_responsable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text=""
+                        android:textColor="@color/GrisTextos"
+                        android:textSize="@dimen/ContentSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Documento:"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/ContentSize"
+                        android:textColor="@color/GrisOscuro" />
+
+                    <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/documento_text"
+                        android:visibility="gone"
+                        android:src="@drawable/download_file"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="No definido"
+                        />
+                    <ImageView
+                        android:id="@+id/documento"
+                        android:src="@drawable/download_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

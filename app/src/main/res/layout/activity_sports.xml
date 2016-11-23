@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/map_container">
+
+
+
+    <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/content_sports_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_search_escenarios">
+
+
+        <RelativeLayout
+            android:id="@+id/fragment_sports_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/fragment_sports_search_advance">
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                android:id="@+id/text_btn_sports_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="Búsqueda de escenarios"
+                android:textColor="@color/NegroTransparente70"
+                android:textSize="@dimen/TitleSize"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/image_search"/>
+
+            <ImageView
+                android:id="@+id/image_search"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_action_search2"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/fragment_sports_search_advance"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_action_search_advanced2"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/fragment_sport_progressbar"
+        android:background="@drawable/progress_animation"
+        android:layout_centerInParent="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+</RelativeLayout>
+

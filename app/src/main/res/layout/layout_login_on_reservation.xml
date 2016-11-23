@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/fragment_reservation_login"
+android:layout_centerHorizontal="true"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginLeft="@dimen/activity_leftRight_margin"
+android:layout_marginRight="@dimen/activity_leftRight_margin"
+android:layout_marginTop="@dimen/activity_leftRight_margin">
+<com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+    android:id="@+id/fragment_reservation_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Inicie sesión para ver sus reservas"
+    android:textSize="@dimen/ContentSize"
+    android:paddingBottom="10dp"/>
+<com.itosoftware.inderandroid.graphicstest.FontButton
+    android:id="@+id/fragment_reservation_button_login"
+    android:text="Iniciar Sesión"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/fragment_reservation_text"
+    android:background="@drawable/rounded_verde"
+    android:padding="10dp"
+    android:textSize="@dimen/ContentSize"/>
+
+</RelativeLayout>

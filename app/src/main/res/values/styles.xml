@@ -1,0 +1,89 @@
+<resources>
+
+    <style name="boton_register_pqrs" parent="@android:style/Widget.Button">
+        <item name="android:drawableTop">@drawable/register_pqrs</item>
+        <item name="android:background">@color/GrisClaro</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/GrisTextos</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="boton_tracing_pqrs" parent="@android:style/Widget.Button">
+        <item name="android:drawableTop">@drawable/tracing_pqrs</item>
+        <item name="android:background">@color/GrisClaro</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/GrisTextos</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="boton_upload_file_pqrs" parent="@android:style/Widget.Button">
+        <item name="android:drawableTop">@drawable/upload_file</item>
+        <item name="android:background">@color/Transparente</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/GrisTextos</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/Verde</item>
+        <item name="actionBarTabStyle">@style/TabBarStyle</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <!-- <item name="colorPrimaryDark">@color/Verde</item> -->
+    </style>
+    <style name="SectionTextViewStyle" parent="@android:style/Widget.TextView">
+        <item name="android:padding">2dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/TitleSize</item>
+    </style>
+    <style name="SectionItemStyle">
+        <item name="android:padding">2dip</item>
+        <item name="android:background">#80000000</item>
+    </style>
+    <style name="ListTextViewStyle" parent="@android:style/TextAppearance">
+        <item name="android:padding">10dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">@dimen/ContentSize</item>
+    </style>
+    <style name="ListItemStyle">
+        <item name="android:padding">2dip</item>
+        <item name="android:background">#80000000</item>
+    </style>
+    <style name="ButtonStyle">
+        <item name="android:padding">2dip</item>
+    </style>
+    <!-- configure your real custom style for the tab bar-->
+    <style name="TabBarStyle" parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@color/Blanco</item>
+    </style>
+
+    <!--<style name="TabBar" parent="@style/Widget.AppCompat.ActionBar.TabBar">-->
+        <!--<item name="android:paddingLeft">0dp</item>-->
+        <!--<item name="android:paddingRight">0dp</item>-->
+        <!--<item name="android:minWidth">0dp</item>-->
+        <!--<item name="android:background">@color/Blanco</item>-->
+    <!--</style>-->
+
+</resources>

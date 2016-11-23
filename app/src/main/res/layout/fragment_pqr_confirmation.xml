@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/Verde"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:src="@drawable/back_arrow"
+                android:tag="back" />
+
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="PQR confirmación"
+                android:textColor="@color/Blanco"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp">
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:text="Confirmacion del envio de su mensaje."
+                android:textSize="20sp"
+                android:textColor="@color/Verde" />
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingBottom="10dp"
+                android:text="El siguiente es el número de registro:"
+                android:textSize="18sp"
+                android:gravity="center_horizontal" />
+            <com.itosoftware.inderandroid.graphicstest.FontTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingBottom="10dp"
+                android:text="234324254531"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_verde"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/Blanco"
+                android:textIsSelectable="true"
+                android:id="@+id/numero_reg" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
