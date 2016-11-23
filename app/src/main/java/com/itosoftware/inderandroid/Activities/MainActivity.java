@@ -1,41 +1,29 @@
 package com.itosoftware.inderandroid.Activities;
 
-import java.util.Locale;
-
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.SearchView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.itosoftware.inderandroid.App.Globals;
-import com.itosoftware.inderandroid.Fragments.DatePickerFragment;
-import com.itosoftware.inderandroid.Fragments.DialogFragmentPqrFilter;
 import com.itosoftware.inderandroid.Fragments.LinksInderFragment;
 import com.itosoftware.inderandroid.Fragments.NewsFragment;
 import com.itosoftware.inderandroid.Fragments.RecommendedFragment;
@@ -46,8 +34,10 @@ import com.itosoftware.inderandroid.Fragments.SportsFragment;
 import com.itosoftware.inderandroid.Fragments.UserAtentionFragment;
 import com.itosoftware.inderandroid.R;
 
+import java.util.Locale;
 
-public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
+
+public class MainActivity extends AppCompatActivity implements ActionBar.TabListener {
 
     SectionsPagerAdapter mSectionsPagerAdapter;
 
